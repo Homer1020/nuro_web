@@ -1,0 +1,20 @@
+/* CONFIG */
+:root {
+    --color-primary: #8741fe;
+}
+
+/* BOOTSTRAP */
+.btn-primary {
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-color: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    --bs-btn-hover-bg: var(--color-primary);
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    aspect-ratio: 384/215;
+    background-size: cover;
+    background-position: center;
+}
