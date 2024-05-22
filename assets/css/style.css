@@ -82,17 +82,45 @@ strong, h1, h2, h3, h4 {
 
 /* TITLE */
 .title {
+    text-align: center;
     text-transform: uppercase;
+    font-family: Lalezar, cursive;
+    font-size: 45px;
 }
 
 .title::after {
+    margin-left: auto;
+    margin-right: auto;
     content: '';
     display: block;
     width: 100px;
     height: 3px;
     background-color: var(--color-primary);
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.super-title {
+    color: var(--color-primary);
+    font-family: Lalezar, cursive;
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+.font-hard {
+    font-size: 35px;
+    font-family: Lalezar, cursive;
+}
+
+@media (min-width: 1200px) {
+    .super-title {
+        margin-bottom: 2rem;
+        font-size: 50px;
+    }
+
+    .font-hard {
+        font-size: 45px;
+    }
 }
 
 .separator::after {
@@ -153,7 +181,11 @@ strong, h1, h2, h3, h4 {
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
+}
+
+.list a:hover {
+    text-decoration: underline;
 }
 
 /* FOOTER */
@@ -165,6 +197,15 @@ strong, h1, h2, h3, h4 {
     display: block;
     margin-top: 10px;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 992px) {
+    .footer-title::after {
+        margin-left: initial;
+        margin-right: initial;
+    }
 }
 
 .logo {
