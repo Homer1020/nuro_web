@@ -53,6 +53,7 @@
 
 body {
     color: #555;
+    padding-top: 73px;
 }
 
 strong, h1, h2, h3, h4 {
@@ -73,6 +74,10 @@ strong, h1, h2, h3, h4 {
 }
 
 .nav-link:hover {
+    color: var(--color-primary);
+}
+
+.nav-link:focus {
     color: var(--color-primary);
 }
 
@@ -98,6 +103,10 @@ strong, h1, h2, h3, h4 {
     background-color: var(--color-primary);
     margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.title.text-white::after {
+    background-color: #fff;
 }
 
 .super-title {
@@ -212,4 +221,18 @@ strong, h1, h2, h3, h4 {
     display: inline-block;
     background-color: #fff;
     border-radius: 5px;
+}
+
+/* HEADER */
+.site-header .navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+/* TEXT */
+.text-primary strong {
+    color: #8741fe !important;
 }
